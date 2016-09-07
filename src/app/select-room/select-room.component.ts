@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'fc-select-room',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['select-room.component.css']
 })
 export class SelectRoomComponent implements OnInit {
+  rooms: FirebaseListObservable<any>;
 
-  constructor() { }
+  constructor(private _af: AngularFire) { }
 
   ngOnInit() {
+    this.rooms = this._af.database.list('/rooms');
+
+  
   }
 
 }

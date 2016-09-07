@@ -1,0 +1,8 @@
+textarea {
+  width: 100%;
+  border: 1px #9e9e9e solid;
+  display: block;
+  resize: vertical;
+  font-family: Roboto;
+  font-size: 14px;
+}

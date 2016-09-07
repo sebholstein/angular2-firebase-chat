@@ -1,0 +1,7 @@
+.room-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.room-container md-card {
+  margin: 16px;
+}

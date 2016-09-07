@@ -1,0 +1,9 @@
+<md-card>
+  <md-card-content>
+    <form (ngSubmit)="saveMessage()" [formGroup]="chatMessageForm">
+      <md-input formControlName="author" placeholder="Your name"></md-input>
+      <p><textarea formControlName="body"></textarea></p>
+      <button md-raised-button color="primary" type="submit" [disabled]="!chatMessageForm.valid">Send</button>
+    </form>
+  </md-card-content>
+</md-card>

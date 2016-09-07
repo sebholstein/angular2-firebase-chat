@@ -1,0 +1,7 @@
+.fill-remaining {
+  flex: 1 1 auto;
+}
+
+a.md-primary[md-button] {
+  color: #fff;
+}
